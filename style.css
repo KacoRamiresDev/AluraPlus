@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor-fundo: #00030c;
+    --cor-titulo: #ffffff;
+    --cor-texto: #f9f9f9;
+    --cor-footer: #c0c0c0;
+    --cor-botao: #167BF7;
+    --font-titulo: 'Inter', sans-serif;
+    --font-texto: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--font-texto);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 0 6em;
+}
+
+.principal {
+    background-image: url('./assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.imagem {
+    width: 80%;
+}
+
+.container__conteudo {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    color: var(--cor-titulo);
+    font-weight: 700;
+    margin-bottom: 1em;
+    font-size: 1.75rem;
+}
+
+.container__botao {
+    background-color: var(--cor-botao);
+    border-radius: 8px;
+    color: var(--cor-titulo);
+    padding: 1em;
+    display: block;
+    margin: 1em 0;
+}
+
+.container__rodape {
+    font-size: 0.75rem;
+    color: var(--cor-footer);
+}
+
+.segundo__titulo {
+    color: var(--cor-titulo);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    font-size: 2.5rem;
+}
+
+.botao_segundario {
+    display: inline-block;
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 5em;
+    width: 80%;
+}
+
+.lista_segundaria {
+    margin: 4em 4em;
+} 
+
+.lista_segundaria a{
+    text-decoration: none;
+    color: var(--cor-titulo);
+}
+
+.rodape__texto {
+    text-align: center;
+    margin: 2em 15em;
+}
+
+.rodape__final {
+    margin-bottom: 5em;
+}
+
+.lista_segundaria a:hover {
+    text-decoration: none;
+    color: var(--cor-botao)
+}
